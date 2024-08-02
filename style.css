@@ -1,0 +1,337 @@
+html{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, li, ol{
+    list-style: none;
+}
+.wrapper{
+
+    max-width: 1440px;
+    margin: auto;
+}
+.container{
+    max-width: 1180px;
+    margin: auto;
+}
+.header{
+    background-color: #53269D;
+}
+.header-flex__row{
+    display: flex;
+    align-items: center;
+
+justify-content: space-between;
+}
+.header ul, li {
+    display: inline;
+    display: flex;
+    padding: 9px;
+   
+    justify-content: center;
+    color: white;
+
+}
+
+.logo img{
+    
+     background-color: none;
+     
+}
+.logo{
+    
+   width: 260px;
+    
+}
+.btn{
+    display: inline;
+
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #FFDB80;
+    border: none;
+
+   
+ 
+
+    
+
+}
+
+/* contact */
+
+.contact{
+height: 1120px;
+background: linear-gradient(180deg, rgba(6, 173, 65, 0) 40%, rgba(109, 49, 208, 1) 100%);
+}
+.contact-flex__row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+   
+    padding-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.title::after{
+    content: '';
+    width: 380px;
+    height: 3px;
+    background-color: #FDBFA3;
+    position: absolute;
+    bottom: -10px;
+    left: -60%;
+}
+
+
+ 
+.number-logo{
+position: relative;
+top: -30px;
+left: 46%;
+
+}
+.tel-number{
+position: absolute;
+left: 47%;
+
+}
+.num{
+    display: flex;
+}
+
+.mail-logo{
+    position: relative;
+    left: 46%;
+   
+
+}
+.email{
+    position: absolute;
+    left: 44%;
+}
+
+.table{
+    
+    background-color: #FDBFA3;
+    margin-top: 60px;
+    border-radius: 60px;
+    padding: 86px 300px 34px 300px;
+}
+
+
+.input-flex input{
+    margin-top: 14px;
+    
+    width: 280px;
+    height: 50px;
+
+    border-radius: 20px;
+    border: 0px;
+
+    
+
+  
+    
+}
+.input-flex input::placeholder{
+    padding-left: 30px;
+}
+.title-table{
+    text-align: center;
+}
+
+.big-input input{
+    width: 580px;
+    height: 200px;
+}
+
+.big-input{
+    padding-top: 14px;
+   
+}
+
+
+.area-input{
+    border-radius: 20px;
+    width: 570px;
+    height: 200px;
+    border: 0;
+}
+
+
+
+
+.privacy-policy p{
+    color: #434364;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.logo-tick img{
+    display: inline;
+    margin-bottom: -60px;
+}
+
+.btn-submit{
+    
+   
+    border: 0;
+    width: 138px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #FFDB80;
+    color: #6D31D0;
+    font-weight: 1000;
+    font-size: 20px;
+    
+}
+
+.footer{
+    display: flex;
+    
+    width: 100%;
+    height: 100px;
+    background-color: #828CDE;
+    
+    margin-top: 90px;
+
+    color: white;
+}
+
+.footer h5{
+    
+    
+    margin: auto;
+    
+}
+.header-burger_btn{
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+
+
+@media (max-width:1000px){
+
+    
+.navigation{
+    display: none;
+}
+.header-burger_btn{
+    display: block;
+    padding-left: 60px;
+    padding-right: 110px;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn{
+    width: 180px;
+}
+
+}
+
+@media (max-width:1000px){
+    .navigation{
+        display: none;
+    }
+    .header-burger_btn{
+        display: block;
+        padding-left: 60px;
+        padding-right: 110px;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .btn{
+        width: 180px;
+    }
+
+
+
+    
+     
+}
+
+@media (max-width:480px){
+    .btn{
+        display: none;
+    }
+    .header-burger_btn{
+        padding-right: 45px;
+    }
+    
+    .headline{
+        padding-right: 50px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .first2{
+        display: flex;
+        flex-direction: column;
+    }
+    .last2{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-flex{
+      
+        width: 100%;
+    }
+    .input-flex input{
+        width: 100%;
+    }
+    .table{
+        padding: 40px;
+    }
+    .area-input{
+        width: 100%;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .email p {
+        margin-left: -29%;
+    }
+    .tel-number p{
+        margin-left: -29%;
+    }
+    .title {
+        margin-left: -1%;
+    }
+}
+
